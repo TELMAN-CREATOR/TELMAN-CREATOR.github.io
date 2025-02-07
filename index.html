@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telman Bayramov - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".nav-list a").forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.getElementById("menu-toggle");
+            const navList = document.querySelector(".nav-list");
+    
+            menuToggle.addEventListener("click", function() {
+                navList.classList.toggle("active");
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <nav>
+            
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profisional">Professional</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="yazı">
+                <h1>I'm <br>Telman <br> Bayramov</h1>
+                <h2>Software <br>Developer <br>& SDET.</h2>
+            </div>
+            
+            <a href="https://www.linkedin.com/in/telman-bayramov-373503289/" class="btn">See my LinkedIn <br> Profile</a>
+        </div>
+    </section>
+    
+    <section id="profisional" class="skills">
+        <h1>01 PROFESSIONAL</h1>
+        <p>MY KNOWLEDGE LEVEL IN SOFTWARE DEVELOPMENT</p>
+        <div class="skill-container">
+    
+            <div class="skill"><span>MANUAL TESTİNG</span>
+                <div class="progress">
+                    <div class="progress-bar" data-width="80%">80%</div>
+                </div>
+            </div>
+    
+            <div class="skill"><span>SELENİUM</span>
+                <div class="progress">
+                    <div class="progress-bar" data-width="85%">85%</div>
+                </div>
+            </div>
+    
+            <div class="skill"><span>PYTHON</span>
+                <div class="progress">
+                    <div class="progress-bar" data-width="70%">70%</div>
+                </div>
+            </div>
+    
+            <div class="skill"><span>JAVA</span>
+                <div class="progress">
+                    <div class="progress-bar" data-width="80%">80%</div>
+                </div>
+            </div>
+    
+            <div class="skill"><span>JAVASCRIPT</span>
+                <div class="progress">
+                    <div class="progress-bar" data-width="85%">85%</div>
+                </div>
+            </div>
+    
+            <div class="skill"><span>HTML</span>
+                <div class="progress">
+                    <div class="progress-bar" data-width="90%">90%</div>
+                </div>
+            </div>
+    
+            <div class="skill"><span>CSS</span>
+                <div class="progress">
+                    <div class="progress-bar" data-width="80%">80%</div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+        <section id="experience" class="two">
+            <h1>02 EXPERIENCE</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h2>06.2024-11.2024</h2>
+                        <h3>HTML, CSS, JAVASCRIPT!</h3>
+                        <h4>I have been improving myself by learning HTML, CSS, and JavaScript since 06.2024, focusing on building responsive and visually appealing web projects.</h4>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h2>10.2024-02.2025</h2>
+                        <h3>Core JAVA</h3>
+                        <h4>I am learning Core Java to strengthen my programming skills and deepen my understanding of object-oriented principles. I focus on writing clean, efficient code while building projects to enhance my experience.</h4>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h2>11.2024-06.2025</h2>
+                        <h3>SDET</h3>
+                        <h4>I am attending an SDET course at TechnoStudy, where I am learning Selenium, Cucumber, Appium, TestIng, and Core Java. This training is helping me develop strong automation testing skills and become a proficient Software Development Engineer in Test.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+ <section id="portfolio">
+    <h1>03 PORTFOLIO</h1>
+    <p>Click to switch to the <br> Github profile.</p>
+    <div class="portfolio-gallery">
+        <a href="https://github.com/TELMAN-CREATOR/CalculatorApp" target="_blank" class="project">
+            <div class="overlay-text">CALCULATOR</div>
+            <img src="images/Calculator.png" alt="Calculator">
+        </a>
+        <a href="https://github.com/TELMAN-CREATOR/SnakeGame1" target="_blank" class="project">
+            <div class="overlay-text">SNAKE GAME</div>
+            <img src="images/Snake Game.png" alt="Snake Game">
+        </a>
+        <a href="https://github.com/TELMAN-CREATOR/PongGame" target="_blank" class="project">
+            <div class="overlay-text">PONG GAME</div>
+            <img src="images/Pong Game.png" alt="Pong Game">
+        </a>
+        <a href="https://github.com/TELMAN-CREATOR/Alarm" target="_blank" class="project">
+            <div class="overlay-text">Web Alarm App</div>
+            <img src="images/web alarm.png" alt="Web Alarm App">
+        </a>
+        <a href="https://github.com/TELMAN-CREATOR/Calculator" target="_blank" class="project">
+            <div class="overlay-text">Web Calculator App</div>
+            <img src="images/web calculator.png" alt="Web Calculator App">
+        </a>
+        <a href="https://github.com/TELMAN-CREATOR/todo" target="_blank" class="project">
+            <div class="overlay-text">Todo</div>
+            <img src="images/web todo.png" alt="Todo">
+        </a>
+    </div>
+</section> 
+    <section id="contact">
+        <h1 style="color: white; font-size: 2rem;"> CONTACT</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>I am a passionate front-end developer with a strong focus on creating visually appealing and user-friendly web experiences. I love turning ideas into responsive and interactive websites using HTML, CSS, and JavaScript. Feel free to reach out for collaboration or inquiries!</p>
+                <p>telmanbayram1@gmail.com</p>
+                <p>Tel: +994 50 317 90 49</p>
+                <div class="social-icons">
+                    <span>🔗</span>
+                    <span>🔗</span>
+                    <span>🔗</span>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/forms" method="POST">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Telman Bayramov. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const progressBars = document.querySelectorAll(".progress-bar");
+            const skillsSection = document.querySelector(".skills");
+            let animationDone = false;
+        
+            function fillBars() {
+                if (!animationDone) {
+                    const sectionPosition = skillsSection.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+        
+                    if (sectionPosition < screenPosition) {
+                        progressBars.forEach((bar) => {
+                            const targetWidth = bar.getAttribute("data-width"); // Genişliği al
+                            bar.style.width = targetWidth;
+                            bar.style.transition = "width 5s ease-in-out"; // Animasyon ekliyoruz
+                        });
+                        animationDone = true; 
+                    }
+                }
+            }
+        
+            window.addEventListener("scroll", fillBars);
+        });
+        </script>
+        
+</body>
+</html>
+

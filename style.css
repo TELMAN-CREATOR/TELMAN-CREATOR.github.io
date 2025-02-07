@@ -1,0 +1,568 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#697A90 ;
+    color: white;
+    text-align: center;
+}
+.menu-toggle{
+    display: none;
+}
+header {
+    background: #2d3e50;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav-list li {
+    margin: 0 15px;
+}
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.nav-list a:hover {
+    color: #4dc64d; 
+    transform: scale(1.1); 
+}
+.hero {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    height: 100%;
+    width: 100%;
+    background: url('images/image1.jpeg')no-repeat center center/cover;
+}
+
+.yazı {
+    margin-right: 80px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+    text-align: right; 
+    font-size: 3rem; 
+    font-weight: bold; 
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    width: 100%;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+.hero-content h2 {
+    margin: 0;
+    font-size: 3rem; 
+    color: rgb(255, 255, 255);
+}
+.btn {
+    display: inline-block;
+    margin-top: auto; 
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #11683b; 
+    border-radius: 5px;
+    transition: 0.3s ease;
+    align-self: center; 
+    margin-bottom: 10%; 
+}
+.btn:hover {
+    background-color: #0c8249; 
+}
+#portfolio{
+    height: 100vh;
+}
+#portfolio h1{
+    font-size: 3rem;
+}
+#portfolio p{
+    font-size: 2rem;
+}
+.portfolio-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 200px;
+}
+
+.project {
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    width: 250px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    background: rgba(0,0,0,0.5); 
+    padding: 10px 0;
+}
+
+.project:hover .overlay-text {
+    opacity: 1; 
+}
+.project:hover{
+    width: 25%;
+    
+}
+/* Genel Section Ayarları */
+.two{
+    background: url('images/pexels-eberhardgross-640781.jpg') no-repeat center center/cover;
+}
+#experience {
+    height: 100vh;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#experience h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Zaman Çizelgesi */
+.timeline {
+    width: 80%;
+    position: relative;
+    margin: 20px 0;
+    padding-left: 30px;
+    border-left: 3px solid #0f0; /* Yeşil çizgi */
+}
+
+.timeline-item {
+    margin: 20px 0;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    background: #0f0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    transform: translateY(10px);
+}
+
+.timeline-content {
+    margin-left: 30px;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.6); /* Hafif karartma */
+    border-radius: 10px;
+}
+
+.timeline-content h2 {
+    font-size: 1.5rem;
+    color: #0f0;
+    margin: 0 0 10px;
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+/* burdan sonra*/
+#contact {
+    background-color: #2d3e50;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 40%;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 50%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.contact-form button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 99%;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 190px;
+}
+
+.social-icons span {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.progress {
+    background: transparent;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: green;
+    width: 0; 
+    text-align: right;
+    padding-right: 5px;
+    font-size: 12px;
+    color: white;
+    line-height: 10px;
+    transition: width 5s ease-in-out;
+}
+
+.skills {
+    height: 100vh;
+    background: url('images/laptop-mu-masaustu-mu-hangisini-secmeli.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding-top: 5vh; 
+    position: static;
+
+    
+    padding: 50px 20px;
+    color: white;
+}
+.skills h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+} 
+
+.skill-container { 
+   
+    width: 80%;
+    margin: auto;
+    
+}
+.skill {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, p {
+    color: white;
+    margin-bottom: 20px;
+}
+/* 📌 768px ve daha küçük ekranlar (Tablet & Telefon) */
+@media (max-width: 768px) {
+    /* Header Düzenleme */
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgb(39, 39, 63);
+        display: none;
+        padding: 10px 0;
+    }
+
+    .nav-list.active {
+        display: flex; /* Menü açılınca görünür olacak */
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+        text-align: right;
+        
+        
+    }
+
+    /* Hero Bölümü */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .yazı {
+        margin: 20px 0;
+        font-size: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    /* Portfolio Düzenleme */
+    #portfolio {
+        height: auto;
+        padding: 50px 20px;
+        position: relative;
+        
+    }
+
+    .portfolio-gallery {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project:hover {
+        width: 100%;
+    }
+
+    /* Experience (Zaman Çizelgesi) */
+    #experience {
+        padding: 20px;
+        height: auto;
+    }
+
+    .timeline {
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    /* Contact Bölümü */
+    #contact {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .social-icons {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    /* Skills Bölümü */
+    .skills {
+        padding: 20px;
+    }
+
+    .skill-container {
+        width: 100%;
+    }
+
+    .skill {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* 📌 480px ve daha küçük ekranlar (Telefon) */
+@media (max-width: 480px) {
+    header {
+        font-size: 10px;
+        max-width: 480px;
+    }
+    .nav-list.active {
+        display: flex; /* Menü açılınca görünür olacak */
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.7rem;
+        color: white;
+        margin-right: 22px;  
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+    .skills h1{
+        font-size: 2rem;
+    }
+    .yazı {
+        font-size: 1.5rem;
+        margin-right: 15px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .timeline-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.8rem;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.9rem;
+    }
+
+    .social-icons span {
+        font-size: 1.2rem;
+    }
+}
