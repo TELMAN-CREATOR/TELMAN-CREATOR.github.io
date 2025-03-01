@@ -43,7 +43,7 @@ header {
     align-items: flex-start; 
     height: 100%;
     width: 100%;
-    background: url('images/image1.jpeg')no-repeat center center/cover;
+    background: url('images/resized_image\ \(1\)\ 2.png')no-repeat center center/cover;
 }
 
 .yazı {
@@ -53,6 +53,8 @@ header {
     text-align: right; 
     font-size: 3rem; 
     font-weight: bold; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+
 }
 
 .hero-content {
@@ -323,7 +325,7 @@ header {
 
 .skills {
     height: 100vh;
-    background: url('images/laptop-mu-masaustu-mu-hangisini-secmeli.jpg') no-repeat center center/cover;
+    background: url('images/ima.webp') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -337,11 +339,20 @@ header {
     color: white;
 }
 .skills h1{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
     font-size: 3rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 } 
+
+.skills p{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+}
 
 .skill-container { 
    
@@ -360,6 +371,7 @@ header {
 h1, p {
     color: white;
     margin-bottom: 20px;
+    
 }
 /* 📌 768px ve daha küçük ekranlar (Tablet & Telefon) */
 @media (max-width: 768px) {
